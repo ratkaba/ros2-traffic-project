@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="T_30">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://T_30/meshes/T_30.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
