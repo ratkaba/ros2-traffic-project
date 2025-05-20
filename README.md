@@ -23,3 +23,9 @@ Ez csak a gazeboban indítja el a robotot és ennyi
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
+## Szerkeszd a .bashrc file-t!
+Ahhoz hogy működjön és megtalálja az elérési útvonalat szerkesztened kell a .bashrch filet
+```
+nano .bashrc
+```
+
