@@ -17,4 +17,9 @@ mkdir -p ~/workspace/src
 cd workspace/src
 ```
 
+# Indítsd el a szimulációt!
+Ez csak a gazeboban indítja el a robotot és ennyi
+```
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+```
 
