@@ -26,6 +26,13 @@ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ## Szerkeszd a .bashrc file-t!
 Ahhoz hogy működjön és megtalálja az elérési útvonalat szerkesztened kell a .bashrch filet
 ```
-nano .bashrc
+source /opt/ros/jazzy/setup.bash
+source ~/ros2_ws/install/setup.bash
+
+export TURTLEBOT3_MODEL=burger
+
+export GZ_SIM_RESOURCE_PATH=~/workspace/src/ros2-traffic-project/models
+
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/workspace/src/ros2-traffic-project/models
 ```
 
