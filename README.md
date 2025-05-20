@@ -9,5 +9,12 @@ Első lépésként elkészítettünk egy világot utakkal és fákkal Gazebo-ban
 - Jobbra tábla: jobbra fordul és elindul
 - Balra tábla: balra fordul és elindul
 
+# A szimuláció elindítása
+Készíts egy workspace mappát és azonbelül egy source mappát. Majd klónozd le a gitrepot
+
+```
+mkdir -p ~/workspace/src
+cd workspace/src
+```
 
 
