@@ -27,7 +27,7 @@ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 Ahhoz hogy működjön és megtalálja az elérési útvonalat szerkesztened kell a .bashrch filet
 ```
 source /opt/ros/jazzy/setup.bash
-source ~/ros2_ws/install/setup.bash
+source ~/workspace/install/setup.bash
 
 export TURTLEBOT3_MODEL=burger
 
