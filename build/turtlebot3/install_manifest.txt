@@ -1,0 +1,15 @@
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/ament_index/resource_index/package_run_dependencies/turtlebot3
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/ament_index/resource_index/parent_prefix_path/turtlebot3
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.sh
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.dsv
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/turtlebot3/environment/path.sh
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/turtlebot3/environment/path.dsv
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/turtlebot3/local_setup.bash
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/turtlebot3/local_setup.sh
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/turtlebot3/local_setup.zsh
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/turtlebot3/local_setup.dsv
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/turtlebot3/package.dsv
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/ament_index/resource_index/packages/turtlebot3
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config.cmake
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config-version.cmake
+/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3/share/turtlebot3/package.xml

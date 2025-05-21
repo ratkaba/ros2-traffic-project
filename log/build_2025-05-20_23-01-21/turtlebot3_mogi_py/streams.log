@@ -1,0 +1,59 @@
+[2.236s] Invoking command in '/home/ratkaba/workspace/src/ros2-traffic-project/turtlebot3_mogi_py': PYTHONPATH=/home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/turtlebot3_mogi_py build --build-base /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build install --record /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/install.log --single-version-externally-managed install_data
+[2.591s] running egg_info
+[2.591s] creating ../build/turtlebot3_mogi_py/turtlebot3_mogi_py.egg-info
+[2.615s] writing ../build/turtlebot3_mogi_py/turtlebot3_mogi_py.egg-info/PKG-INFO
+[2.616s] writing dependency_links to ../build/turtlebot3_mogi_py/turtlebot3_mogi_py.egg-info/dependency_links.txt
+[2.617s] writing entry points to ../build/turtlebot3_mogi_py/turtlebot3_mogi_py.egg-info/entry_points.txt
+[2.617s] writing requirements to ../build/turtlebot3_mogi_py/turtlebot3_mogi_py.egg-info/requires.txt
+[2.617s] writing top-level names to ../build/turtlebot3_mogi_py/turtlebot3_mogi_py.egg-info/top_level.txt
+[2.617s] writing manifest file '../build/turtlebot3_mogi_py/turtlebot3_mogi_py.egg-info/SOURCES.txt'
+[2.666s] reading manifest file '../build/turtlebot3_mogi_py/turtlebot3_mogi_py.egg-info/SOURCES.txt'
+[2.667s] writing manifest file '../build/turtlebot3_mogi_py/turtlebot3_mogi_py.egg-info/SOURCES.txt'
+[2.668s] running build
+[2.668s] running build_py
+[2.668s] creating /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build
+[2.669s] creating /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib
+[2.669s] creating /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py
+[2.669s] copying turtlebot3_mogi_py/line_follower_cnn.py -> /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py
+[2.670s] copying turtlebot3_mogi_py/save_training_images.py -> /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py
+[2.670s] copying turtlebot3_mogi_py/train_network.py -> /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py
+[2.670s] copying turtlebot3_mogi_py/__init__.py -> /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py
+[2.670s] copying turtlebot3_mogi_py/line_follower.py -> /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py
+[2.670s] copying turtlebot3_mogi_py/line_follower_cnn_robot.py -> /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py
+[2.670s] running install
+[2.678s] running install_lib
+[2.702s] creating /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py
+[2.703s] copying /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py/line_follower_cnn.py -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py
+[2.703s] copying /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py/save_training_images.py -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py
+[2.703s] copying /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py/train_network.py -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py
+[2.704s] copying /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py/__init__.py -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py
+[2.704s] copying /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py/line_follower.py -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py
+[2.705s] copying /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build/lib/turtlebot3_mogi_py/line_follower_cnn_robot.py -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py
+[2.705s] byte-compiling /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py/line_follower_cnn.py to line_follower_cnn.cpython-312.pyc
+[2.708s] byte-compiling /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py/save_training_images.py to save_training_images.cpython-312.pyc
+[2.709s] byte-compiling /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py/train_network.py to train_network.cpython-312.pyc
+[2.711s] byte-compiling /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py/__init__.py to __init__.cpython-312.pyc
+[2.711s] byte-compiling /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py/line_follower.py to line_follower.cpython-312.pyc
+[2.713s] byte-compiling /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py/line_follower_cnn_robot.py to line_follower_cnn_robot.cpython-312.pyc
+[2.716s] running install_data
+[2.716s] creating /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/share/ament_index
+[2.716s] creating /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/share/ament_index/resource_index
+[2.717s] creating /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/share/ament_index/resource_index/packages
+[2.717s] copying resource/turtlebot3_mogi_py -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/share/ament_index/resource_index/packages
+[2.717s] copying package.xml -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/share/turtlebot3_mogi_py
+[2.717s] creating /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/share/turtlebot3_mogi_py/network_model
+[2.717s] copying network_model/model.best.keras -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/share/turtlebot3_mogi_py/network_model
+[2.727s] copying network_model/model_training.png:Zone.Identifier -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/share/turtlebot3_mogi_py/network_model
+[2.728s] copying network_model/model.keras -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/share/turtlebot3_mogi_py/network_model
+[2.743s] copying network_model/model_training.png -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/share/turtlebot3_mogi_py/network_model
+[2.743s] copying network_model/model.keras:Zone.Identifier -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/share/turtlebot3_mogi_py/network_model
+[2.743s] copying network_model/model.best.keras:Zone.Identifier -> /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/share/turtlebot3_mogi_py/network_model
+[2.743s] running install_egg_info
+[2.770s] Copying ../build/turtlebot3_mogi_py/turtlebot3_mogi_py.egg-info to /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages/turtlebot3_mogi_py-1.0.0-py3.12.egg-info
+[2.772s] running install_scripts
+[2.952s] Installing line_follower script to /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/turtlebot3_mogi_py
+[2.953s] Installing line_follower_cnn script to /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/turtlebot3_mogi_py
+[2.953s] Installing line_follower_cnn_robot script to /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/turtlebot3_mogi_py
+[2.954s] Installing save_training_images script to /home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/turtlebot3_mogi_py
+[2.954s] writing list of installed files to '/home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/install.log'
+[2.995s] Invoked command in '/home/ratkaba/workspace/src/ros2-traffic-project/turtlebot3_mogi_py' returned '0': PYTHONPATH=/home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ratkaba/workspace/src/ros2-traffic-project/install/turtlebot3_mogi_py/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/turtlebot3_mogi_py build --build-base /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/build install --record /home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi_py/install.log --single-version-externally-managed install_data

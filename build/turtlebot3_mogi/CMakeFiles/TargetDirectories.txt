@@ -1,0 +1,9 @@
+/home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi/CMakeFiles/uninstall.dir
+/home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi/CMakeFiles/turtlebot3_mogi_uninstall.dir
+/home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi/CMakeFiles/test.dir
+/home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi/CMakeFiles/edit_cache.dir
+/home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi/CMakeFiles/rebuild_cache.dir
+/home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi/CMakeFiles/list_install_components.dir
+/home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi/CMakeFiles/install.dir
+/home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi/CMakeFiles/install/local.dir
+/home/ratkaba/workspace/src/ros2-traffic-project/build/turtlebot3_mogi/CMakeFiles/install/strip.dir
