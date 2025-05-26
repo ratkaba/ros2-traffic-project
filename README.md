@@ -12,7 +12,10 @@ Az órai előadásokon elhangzottak és a kiadott anyagok alapján indultunk el.
 Mivel közlekedési tábla felismerés volt a feladatunk, ezért egy annak megfelelő világ létrehozása volt a cél. Kezdetben más, már létező világokat kerestünk az interneten. Találtunk is, de nem tudtuk megfelelően beimportálni a szükséges modelleket és textúrákat. Ezért, úgy döntöttünk, hogy nulláról kezdjük és elkészítünk egy saját világot.
 Az utakat téglalapokként helyeztük el a ground plane-n, majd a Gazebo saját könyvtárából fákat helyeztünk el a színesebb környezet érdekében. Ezekután táblákra volt szükségünk, mint feladatunk központi elemére. Az interneten talált modellek nem voltak megfelelőek számunkra, ezért Blender környezetben modelleztünk saját táblákat. Az elkészített modellek megtalálhatóak a models mappában. Végül a táblákat elhelyeztük a világban.
 ### Táblakészítés blenderben
-
+..
+.
+.
+.
 ### A táblák és a hozzátartozó akciók
 Az alábbi táblákat használtul fel (zárójelben az elvégezendő akció):
 
@@ -34,8 +37,15 @@ Hosszas ötletelés során az alábbi ötletre jutottunk:
  - Plusz képeket gyűjtünk be az internetről
  - YOLO segítségével végezzük a tanítást
 
+A tanítást úgy láttuk a legjobbnak, hogy nem wsl2-n futtatjuk, hanem Windows alatt és ha kész a tanulás utána ültetjük át a végeredményt.
+### Tesztelés
+...
+.
+
+.
+.
 # A szimuláció elindítása
-Készíts egy workspace mappát és azonbelül egy source mappát. Majd klónozd le a gitrepot
+Készíts egy workspace mappát és azonbelül egy source mappát. Majd klónozd le a git repo-t.
 
 ```
 mkdir -p ~/workspace/src
