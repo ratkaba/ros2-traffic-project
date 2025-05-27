@@ -4,7 +4,7 @@ Gazebo szimulációs környezetben TurtleBot3 segítségével közlekedési táb
 ## A projekt elkészítésében részt vettek:
 - Rátkai Bálint (DSPQKJ)
 - Veres András Jenő ()
-- Kis-Tamás Levente
+- Kis-Tamás Levente (N1LVWX)
 
 ## A Projekt elkészítése
 Az órai előadásokon elhangzottak és a kiadott anyagok alapján indultunk el. 
