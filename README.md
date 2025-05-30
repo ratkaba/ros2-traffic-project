@@ -45,6 +45,11 @@ A tanítás során a YOLO 8-as verzióját használtuk. Első próbálkozásra a
 Mivel nem volt sok képünk, és nagyon hasonló ez a két tábla, arra jutottunk, hogy a BAL táblát lecseréljük egy másik fajta BAL táblára. Ebben az esetben már működött a modell.
 Végeredményképpen: YOLOv8m modellt használtuk tanításra. A kapott súlyok és képek megtalálhatóak a fenti mappákban.
 ### Tesztelés
+A végleges modellel is kipróbáltuk a világból kimentet képeken a detektálást és így az alábbi eredményeket kaptuk:
+
+![jobb](assets/jobb1.jpg)
+![zebra](assets/zebraa.jpg)
+![bal](assets/gazebo.jpg)
 ...
 .
 
