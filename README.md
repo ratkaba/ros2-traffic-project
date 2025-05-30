@@ -38,7 +38,11 @@ Hosszas ötletelés során az alábbi ötletre jutottunk:
  - YOLO segítségével végezzük a tanítást
 
 A tanítást úgy láttuk a legjobbnak, hogy nem wsl2-n futtatjuk, hanem Windows alatt és ha kész a tanulás utána ültetjük át a végeredményt.
-A tanítás során a YOLO 8-as verzióját használtuk. Első próbálkozásra a nano a legalacsonyabb tanításí modellel tanítottuk a képeket. Ebben az esetben a STOP és ZEBRA táblák detektálása majdnem mind 0.8 feletti volt. A jobbra és balra táblák esetében viszont pontatlan volt a modell. Az erősebb modelleket használva arra jutottunk még több képet annotálunk és tanítunk. Sajnos ebben az esetben a BALRA táblát JOBBRA táblának érzékelte. Mivel nem volt sok képünk, és nagyon hasonló ez a két tábla, arra jutottunk, hogy a BAL táblát lecseréljük egy másik fajta BAL táblára. Ebben az esetben már működött a modell.
+A tanítás során a YOLO 8-as verzióját használtuk. Első próbálkozásra a nano a legalacsonyabb tanításí modellel tanítottuk a képeket. Ebben az esetben a STOP és ZEBRA táblák detektálása majdnem mind 0.8 feletti volt. A jobbra és balra táblák esetében viszont pontatlan volt a modell. Az erősebb modelleket használva arra jutottunk még több képet annotálunk és tanítunk. Sajnos ebben az esetben a BALRA táblát JOBBRA táblának érzékelte.
+
+![rossz detektálás](assets/bal1.jpg)
+
+Mivel nem volt sok képünk, és nagyon hasonló ez a két tábla, arra jutottunk, hogy a BAL táblát lecseréljük egy másik fajta BAL táblára. Ebben az esetben már működött a modell.
 Végeredményképpen: YOLOv8m modellt használtuk tanításra. A kapott súlyok és képek megtalálhatóak a fenti mappákban.
 ### Tesztelés
 ...
