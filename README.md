@@ -3,7 +3,7 @@ Projektfeladatunk a BME Kognitiv Robotika tárgy keretében a következő volt:
 Gazebo szimulációs környezetben TurtleBot3 segítségével közlekedési táblákat kellett felismerni és azok alapján a megfelelő akciót végrehajtani.
 ## A projekt elkészítésében részt vettek:
 - Rátkai Bálint (DSPQKJ)
-- Veres András Jenő ()
+- Veres András Jenő (A7FOV4)
 - Kis-Tamás Levente (N1LVWX)
 
 ## A Projekt elkészítése
