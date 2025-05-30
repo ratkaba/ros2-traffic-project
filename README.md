@@ -50,11 +50,9 @@ A végleges modellel is kipróbáltuk a világból kimentet képeken a detektál
 ![jobb](assets/jobb1.jpg)
 ![zebra](assets/zebraa.jpg)
 ![bal](assets/gazebo.jpg)
-...
-.
+![stop](assets/teszt_kep.jpg)
 
-.
-.
+A detektálás sikeres volt, következő lépésben a kapott .pt file-t wsl2 környezetbe átültettük és kipróváltuk a szimulációban.
 # A szimuláció elindítása
 Készíts egy workspace mappát és azonbelül egy source mappát. Majd klónozd le a git repo-t.
 
