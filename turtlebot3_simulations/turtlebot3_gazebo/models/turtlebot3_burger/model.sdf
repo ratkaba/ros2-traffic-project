@@ -22,10 +22,10 @@
       <inertial>
         <pose>-0.032 0 0.0 0 0 0</pose>
         <inertia>
-          <ixx>0.0023</ixx>
+          <ixx>0.023</ixx> <!-- 0.0023 helyett -->
           <ixy>0.0</ixy>
           <ixz>0.0</ixz>
-          <iyy>0.0023</iyy>
+          <iyy>0.023</iyy> <!-- 0.0023 helyett -->
           <iyz>0.0</iyz>
           <izz>0.00196</izz>
         </inertia>
@@ -84,7 +84,7 @@
 
     <link name="base_scan">
       <inertial>
-        <pose>-0.020 0 0.161 0 0 0</pose>
+        <pose>-0.020 0 0.0261 0 0 0</pose>
         <inertia>
           <ixx>0.0001</ixx>
           <ixy>0.000</ixy>
@@ -93,7 +93,7 @@
           <iyz>0.000</iyz>
           <izz>0.00014</izz>
         </inertia>
-        <mass>0.114</mass>
+        <mass>0.2</mass>
       </inertial>
 
       <collision name="lidar_sensor_collision">
@@ -101,7 +101,7 @@
         <geometry>
           <cylinder>
             <radius>0.0508</radius>
-            <length>0.055</length>
+            <length>0.05</length>
           </cylinder>
         </geometry>
       </collision>
@@ -184,8 +184,8 @@
           <!-- This friction pamareter don't contain reliable data!! -->
           <friction>
             <ode>
-              <mu>0.1</mu>
-              <mu2>0.1</mu2>
+              <mu>1</mu>
+              <mu2>1</mu2>
               <fdir1>1 0 0</fdir1>
               <slip1>0.0</slip1> 
               <slip2>0.0</slip2> 
@@ -245,8 +245,8 @@
           <!-- This friction pamareter don't contain reliable data!! -->
           <friction>
             <ode>
-              <mu>0.1</mu>
-              <mu2>0.1</mu2>
+              <mu>1</mu>
+              <mu2>1</mu2>
               <fdir1>1 0 0</fdir1>
               <slip1>0.0</slip1> 
               <slip2>0.0</slip2> 
@@ -348,7 +348,7 @@
           <iyz>0.0</iyz>
           <izz>0.0000075</izz>
         </inertia>
-        <mass>0.05</mass>
+        <mass>0.0005</mass>   <!-- 0.05 helyett -->
       </inertial>
 
       <collision name="camera_collision">
@@ -392,8 +392,8 @@
             <format>R8G8B8</format>
           </image>
           <clip>
-            <near>0.02</near>
-            <far>15</far>
+            <near>0.1</near>
+            <far>150</far>
           </clip>
           <noise>
             <type>gaussian</type>
@@ -421,7 +421,7 @@
         <xyz>0 1 0</xyz>
         <limit>
           <effort>100</effort>
-          <velocity>10</velocity>
+          <velocity>100</velocity>
           <lower>-inf</lower>
           <upper>inf</upper>
         </limit>
@@ -442,7 +442,7 @@
         <xyz>0 1 0</xyz>
         <limit>
           <effort>100</effort>
-          <velocity>10</velocity>
+          <velocity>100</velocity>
           <lower>-inf</lower>
           <upper>inf</upper>
         </limit>
@@ -497,15 +497,15 @@
       <wheel_radius>0.033</wheel_radius>
 
       <!-- Control gains and limits (optional) -->
-      <max_velocity>0.8</max_velocity>                <!-- Max linear velocity in m/s -->
-      <max_linear_acceleration>0.5</max_linear_acceleration>
-      <min_linear_acceleration>-0.5</min_linear_acceleration>
+      <max_velocity>10</max_velocity>                <!-- Max linear velocity in m/s -->
+      <max_linear_acceleration>6</max_linear_acceleration>
+      <min_linear_acceleration>-6</min_linear_acceleration>
       <max_angular_acceleration>2.0</max_angular_acceleration>
       <min_angular_acceleration>-2.0</min_angular_acceleration>
-      <max_linear_velocity>0.2</max_linear_velocity>
-      <min_linear_velocity>-0.2</min_linear_velocity>
-      <max_angular_velocity>1.0</max_angular_velocity>
-      <min_angular_velocity>-1.0</min_angular_velocity>
+      <max_linear_velocity>10</max_linear_velocity>
+      <min_linear_velocity>-10</min_linear_velocity>
+      <max_angular_velocity>2.0</max_angular_velocity>
+      <min_angular_velocity>-2.0</min_angular_velocity>
 
       <topic>cmd_vel</topic>
 
@@ -524,6 +524,17 @@
       <joint_name>wheel_left_joint</joint_name>
       <joint_name>wheel_right_joint</joint_name>
     </plugin>    
+
+    <plugin name="gz::sim::systems::PosePublisher" filename="gz-sim-pose-publisher-system">
+      <publish_link_pose>false</publish_link_pose>
+      <publish_sensor_pose>false</publish_sensor_pose>
+      <publish_model_pose>true</publish_model_pose>
+      <publish_collision_pose>false</publish_collision_pose>
+      <publish_visual_pose>false</publish_visual_pose>
+      <publish_nested_model_pose>true</publish_nested_model_pose>
+    </plugin>
+
+
 
   </model>
 </sdf>

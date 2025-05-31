@@ -306,6 +306,7 @@
           </surface>
         </collision>
         <visual name='visual'>
+        <cast_shadows>false</cast_shadows>
           <geometry>
             <plane>
               <normal>0 0 1</normal>
@@ -313,9 +314,9 @@
             </plane>
           </geometry>
           <material>
-            <ambient>0.800000012 0.800000012 0.800000012 1</ambient>
-            <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
-            <specular>0.100000001 0.100000001 0.100000001 1</specular>
+            <ambient>0.800000012 0.800000012 0.800000012 0</ambient>
+            <diffuse>0.800000012 0.800000012 0.800000012 0</diffuse>
+            <specular>0.100000001 0.100000001 0.100000001 0</specular>
           </material>
         </visual>
         <pose>0 0 0 0 0 0</pose>
@@ -333,7 +334,7 @@
         </inertial>
         <enable_wind>false</enable_wind>
       </link>
-      <pose>0 0 0 0 0 0</pose>
+      <pose>0 0 0.1 0 0 0</pose>
       <self_collide>false</self_collide>
     </model>
     <model name='road_straight_1'>
@@ -343,7 +344,7 @@
         <visual name='visual'>
           <geometry>
             <box>
-              <size>10 2 0.10000000000000001</size>
+              <size>10 2 0.099</size>
             </box>
           </geometry>
           <material>
@@ -991,7 +992,7 @@
       <pose>5 -1.45 0 0 0 0</pose>
       <link name='zebra_link'>
         <visual name='black_base'>
-          <pose>0 0 0.050000000000000003 0 0 0</pose>
+          <pose>0 0 0.049 0 0 0</pose>
           <geometry>
             <box>
               <size>2.1000000000000001 0.90000000000000002 0.10000000000000001</size>
@@ -1097,7 +1098,7 @@
       <pose>-5.5499999999999998 14 0 0 0 1.5708000000000011</pose>
       <link name='zebra_link2'>
         <visual name='black_base'>
-          <pose>0 0 0.050000000000000003 0 0 0</pose>
+          <pose>0 0 0.049 0 0 0</pose>
           <geometry>
             <box>
               <size>2.1000000000000001 0.90000000000000002 0.10000000000000001</size>
