@@ -7,7 +7,7 @@ Gazebo szimulációs környezetben TurtleBot3 segítségével közlekedési táb
 
 ## A projekt elkészítésében részt vettek:
 - Rátkai Bálint (DSPQKJ)
-- Veres András Jenő ()
+- Veres András Jenő (A7FOV4)
 - Kis-Tamás Levente (N1LVWX)
 
 ## A Projekt elkészítése
@@ -15,11 +15,26 @@ Az órai előadásokon elhangzottak és a kiadott anyagok alapján indultunk el.
 ### A világ megalkotása
 Mivel közlekedési tábla felismerés volt a feladatunk, ezért egy annak megfelelő világ létrehozása volt a cél. Kezdetben más, már létező világokat kerestünk az interneten. Találtunk is, de nem tudtuk megfelelően beimportálni a szükséges modelleket és textúrákat. Ezért, úgy döntöttünk, hogy nulláról kezdjük és elkészítünk egy saját világot.
 Az utakat téglalapokként helyeztük el a ground plane-n, majd a Gazebo saját könyvtárából fákat helyeztünk el a színesebb környezet érdekében. Ezekután táblákra volt szükségünk, mint feladatunk központi elemére. Az interneten talált modellek nem voltak megfelelőek számunkra, ezért Blender környezetben modelleztünk saját táblákat. Az elkészített modellek megtalálhatóak a models mappában. Végül a táblákat elhelyeztük a világban.
+
 ### Táblakészítés blenderben
-..
-.
-.
-.
+A táblákat egy kész csomag részeként szereztük be, amely az alábbi linken érhető el:
+https://andrew-d.gumroad.com/l/bbAKE
+
+Innen Blender 3-ban kiválaszottuk a számunkra szükséges táblákat, majd ezeket egy táblaoszlopra helyezve exportáltuk azokat textúrával együtt.
+
+![image](https://github.com/user-attachments/assets/cd02e952-03d4-4010-b102-0d027b35455b)
+
+A balra táblát végül lecseréltük egy szögletes alapúra, ehhez a texture paint fülön a textúra kimentése után Gimppel átfestetük a .png fájlt, amelyet újra beolvasva már a megfelelő kinézettel tudtuk exportálni a táblát.
+
+Exportálás során a következőkre kell figyelni:
+- A tábla és a tábla-oszlop legyen kijelölve a világban, más viszont ne.
+- A tábla a világ origójában legyen, különben Gazeboban is ugyanannyival el lesz tolva.
+Ez után exportálhatjuk egy külön mappába: File -> Export -> Collada (.dae), pipáljuk be a Selection only és az UV opciókat, adjunk egy értelmes nevet a file-nak, és hozzunk létre neki egy almappát!
+
+![image](https://github.com/user-attachments/assets/97d1833c-6702-42d2-971f-6c0c6a1aea88)
+
+Ez létrehozza a .dae filet, és mellé elmenti a textúrát is. Helyezzük ezeket egy "meshes" nevű almappába, majd másoljuk a meshes mappa mellé valamely kész modell model.config és model.sdf fájlját, a .sdf-ben módosítsuk a referenciákat az új modell .dae fájljára, illetve a .config-ban nevezzük át tetszőlegesen a modellünket a <name> paraméterrel (ez a név fog megjelenni Gazebo-ban).  
+
 ### A táblák és a hozzátartozó akciók
 Az alábbi táblákat használtul fel (zárójelben az elvégezendő akció):
 
@@ -31,6 +46,68 @@ Az alábbi táblákat használtul fel (zárójelben az elvégezendő akció):
 A következő lépés a tanítás, de ezek előtt a robotunkon módosítani kellett pár paramétert.
 ### TurtleBot3 átalakítása
 A MOGI csomag alapján használtuk a TurtleBot-ot, de szükséges volt pár paraméterének a megváltoztatására. Elsődlegesen a sebességét állítottuk át, mivel méretéből adódóan nagyon lassan haladt az eredeti sebességet használva. Ezért sikeresen felgyorsítottuk. Ezekmeleltt a roboton található kamerának paramétereit is meg kellett változtatnunk, Feljebb emeltük a kamerát, hogy a kamera kép tényleg egy autóéhoz hasonlítson. Figyeltünk a robot fizikai jellemzőire is, hogy ezek a változások ne "borítsák fel" a robotunkat.
+
+
+# A változtatások részletesebben:
+
+A stabilitáshoz:
+```
+    <link name="base_link"> ...
+      <inertial> ...
+        <inertia>
+          <ixx>0.023</ixx> <!-- 0.0023 helyett --> ...
+          <iyy>0.023</iyy> <!-- 0.0023 helyett --> 
+...
+    <link name="wheel_left_link"> ...
+      <collision name="wheel_left_collision"> ...
+        <surface>
+          <!-- This friction pamareter don't contain reliable data!! -->
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+```
+ue. wheel_right_link-re
+
+A kamera módosítása:
+```
+    <link name="camera_link">
+      <inertial>
+        <mass>0.0005</mass>   <!-- 0.05 helyett --> ...
+
+      <pose>0.03 0 1 0 0 0</pose> ...
+
+      <sensor name="camera" type="camera"> ...
+        <camera name="intel_realsense_r200">
+          <clip>
+            <near>0.1</near>
+            <far>150</far>
+```
+
+Max sebességhez:
+```
+
+    <joint name="wheel_left_joint" type="revolute"> ...
+      <axis> ...
+        <limit>
+          <effort>100</effort>
+          <velocity>100</velocity>
+```
+ue. wheel_right_joint-ra
+
+Plugin a pocíció publikálására:
+```
+    <plugin name="gz::sim::systems::PosePublisher" filename="gz-sim-pose-publisher-system">
+      <publish_link_pose>false</publish_link_pose>
+      <publish_sensor_pose>false</publish_sensor_pose>
+      <publish_model_pose>true</publish_model_pose>
+      <publish_collision_pose>false</publish_collision_pose>
+      <publish_visual_pose>false</publish_visual_pose>
+      <publish_nested_model_pose>true</publish_nested_model_pose>
+    </plugin>
+```
+
+
 ### Tanítás YOLO-val
 Hosszas ötletelés során az alábbi ötletre jutottunk:
 
