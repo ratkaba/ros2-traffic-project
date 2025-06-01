@@ -58,6 +58,11 @@ A végleges modellünk a YOLO8 medium verziója. Először Windowson kimentett k
 Az eredményeket látva, tovább léphettünk a WSL2 környezetbe átimportálásra.
 #### Tesztelés wsl2-ben
 
+### Összegzés és fejlesztési javaslatok
+A projektfeladat elkészítése során számos problémába ütköztünk, de többségére mind találtunk megoldást. Hátráltatott minket a lassú környezet (GPU-t nem tudtuk használni) és sok tárhelyre is volt szükségünk.
+Elsajátítottuk a github kezelését, wsl2-ben használt utasításokat, gazebo világ építésést, saját ROS2 nodeírásokat. Összességében a projekt feladatunk képes táblák detektálására szimulációban a turtlebot3 segítségével real time.
+
+A projektfeladat tovább fejleszthető egy erősebb tanítási modellel és nagyobb adatbázissal. A mi megoldásunkban csak kameraképet hasznátunk. LIDAR segítségével komplexebb detektálás is végrehajtható az időben. Mint például gyalogosok a zebrán, más autók távolsága.
 # A szimuláció elindítása
 Készíts egy workspace mappát és azonbelül egy source mappát. Majd klónozd le a git repo-t.
 
