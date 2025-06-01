@@ -137,9 +137,10 @@ Az eredményeket látva, tovább léphettünk a WSL2 környezetbe átimportálá
 
 ### Összegzés és fejlesztési javaslatok
 A projektfeladat elkészítése során számos problémába ütköztünk, de többségére mind találtunk megoldást. Hátráltatott minket a lassú környezet (GPU-t nem tudtuk használni) és sok tárhelyre is volt szükségünk.
+Az robot nem automatán megy, távirányító segítségével tudjuk irányítani.
 Elsajátítottuk a github kezelését, wsl2-ben használt utasításokat, gazebo világ építésést, saját ROS2 nodeírásokat. Összességében a projekt feladatunk képes táblák detektálására szimulációban a turtlebot3 segítségével real time.
 
-A projektfeladat tovább fejleszthető egy erősebb tanítási modellel és nagyobb adatbázissal. A mi megoldásunkban csak kameraképet hasznátunk. LIDAR segítségével komplexebb detektálás is végrehajtható az időben. Mint például gyalogosok a zebrán, más autók távolsága.
+A projektfeladat tovább fejleszthető egy erősebb tanítási modellel és nagyobb adatbázissal. A mi megoldásunkban csak kameraképet hasznátunk. LIDAR segítségével komplexebb detektálás is végrehajtható az időben. Mint például gyalogosok a zebrán, más autók távolsága. Illetve automatizálható.
 # A szimuláció elindítása
 Készíts egy workspace mappát és azonbelül egy source mappát. Majd klónozd le a git repo-t.
 
@@ -149,13 +150,13 @@ cd workspace/src
 ```
 
 # Indítsd el a szimulációt!
-Ez csak a gazeboban indítja el a robotot és ennyi
+Ez elindítja a GAZEBO szimulációt!
 ```
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
 ## Szerkeszd a .bashrc file-t!
-Ahhoz hogy működjön és megtalálja az elérési útvonalat szerkesztened kell a .bashrch filet
+Ahhoz hogy működjön és megtalálja az elérési útvonalat szerkesztened kell a .bashrch filet!
 ```
 source /opt/ros/jazzy/setup.bash
 source ~/workspace/install/setup.bash
