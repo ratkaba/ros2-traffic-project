@@ -44,11 +44,16 @@ Első megoldások esetében, a YOLOv8 alacsonyabb modelljeit használtuk. Azt ve
 
 
 ### Tesztelés
-...
-.
+A végleges modellünk a YOLO8 medium verziója. Először Windowson kimentett képeken néztük meg az eredményeket. 
 
-.
-.
+![bal](assets/images/bal1.jpg)
+![jobb](assets/images/jobb1.jpg)
+![zebra](assets/images/zebra1.jpg)
+![stop](assets/images/stop1.jpg)
+
+Az eredményeket látva, tovább léphettünk a WSL2 környezetbe átimportálásra.
+#### Tesztelés wsl2-ben
+
 # A szimuláció elindítása
 Készíts egy workspace mappát és azonbelül egy source mappát. Majd klónozd le a git repo-t.
 
