@@ -38,6 +38,11 @@ Hosszas ötletelés során az alábbi ötletre jutottunk:
  - YOLO segítségével végezzük a tanítást
 
 A tanítást úgy láttuk a legjobbnak, hogy nem wsl2-n futtatjuk, hanem Windows alatt és ha kész a tanulás utána ültetjük át a végeredményt.
+Első megoldások esetében, a YOLOv8 alacsonyabb modelljeit használtuk. Azt vettük észre, hogy a tábla felismeréskor a BALRA táblát is JOBBRA táblának detektálja. Nem volt elegendő képünk ennek kiküszöbölésére. Nagyon hasonló a két tábla ezért úgy döntöttünk másra cseréljük a BALRA táblát.
+
+![rossz tábla](assets/images/rossz.jpg
+
+
 ### Tesztelés
 ...
 .
