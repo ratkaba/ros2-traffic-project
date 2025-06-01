@@ -1,6 +1,10 @@
 # Közúti tábla detektálása Gazebo világban turtlebot3-al
 Projektfeladatunk a BME Kognitiv Robotika tárgy keretében a következő volt:
 Gazebo szimulációs környezetben TurtleBot3 segítségével közlekedési táblákat kellett felismerni és azok alapján a megfelelő akciót végrehajtani.
+
+[👉 Nézd meg a videót a YouTube-on](https://www.youtube.com/watch?v=Yc2gTMmYv5w)
+
+
 ## A projekt elkészítésében részt vettek:
 - Rátkai Bálint (DSPQKJ)
 - Veres András Jenő ()
