@@ -48,7 +48,7 @@ A következő lépés a tanítás, de ezek előtt a robotunkon módosítani kell
 A MOGI csomag alapján használtuk a TurtleBot-ot, de szükséges volt pár paraméterének a megváltoztatására. Elsődlegesen a sebességét állítottuk át, mivel méretéből adódóan nagyon lassan haladt az eredeti sebességet használva. Ezért sikeresen felgyorsítottuk. Ezekmeleltt a roboton található kamerának paramétereit is meg kellett változtatnunk, Feljebb emeltük a kamerát, hogy a kamera kép tényleg egy autóéhoz hasonlítson. Figyeltünk a robot fizikai jellemzőire is, hogy ezek a változások ne "borítsák fel" a robotunkat.
 
 
-# A változtatások részletesebben:
+#### A változtatások részletesebben:
 
 A stabilitáshoz:
 ```
@@ -166,4 +166,47 @@ export GZ_SIM_RESOURCE_PATH=~/workspace/src/ros2-traffic-project/models
 
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/workspace/src/ros2-traffic-project/models
 ```
+
+# Indítsd el a távirányítót
+
+Egy új console-ban:
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+Ezzel irányítható a turtlebot.
+A robot max. sebessége feljebb lett véve, de a távirányító indítás után nem küld ehhez megfelelő parancsot: spameljük kicsit a 'q' billentyűt, kb. amíg a max sebesség el nem éri a 2-t.
+
+
+# YOLO node indítása
+
+A YOLO futtatásához hozzunk létre egy virtuális környezetet az alábbi útmutató szerint:
+https://github.com/MOGI-ROS/Week-1-8-Cognitive-robotics/tree/main?tab=readme-ov-file#setting-up-a-python-virtual-environment
+
+A virtuális környezetben telepítsük az ultralytics-et, és a többi szükséges könyvtárat:
+```
+pip install ultralytics 
+```
+...
+
+A szükséges könyvtárak telepítése után a virtuális könyvtárból indítható a yolo node,
+ebben a console ablakban futtassuk az alábbi parancsot, hogy a virtuális könyvár-beli python fusson:
+```
+export PYTHONPATH=$PYTHONPATH:/home/vaj/.virtualenvs/tf/lib/python3.12/site-packages
+```
+
+Majd indítsuk a yolo node-ot!
+```
+ros2 run yolo_node yolo_gpt
+```
+
+# Megjelenítés
+
+A megjelenítéshez indítsunk egy rviz2 ablakot:
+```
+rviz2
+```
+Bal alul az "add" gombra kattintva a "by topic" fülön válasszuk ki a /ultralytics/detection/image opciót.
+
+
+
 
