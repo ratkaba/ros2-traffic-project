@@ -191,9 +191,12 @@ pip install ultralytics
 A szükséges könyvtárak telepítése után a virtuális könyvtárból indítható a yolo node,
 ebben a console ablakban futtassuk az alábbi parancsot, hogy a virtuális könyvár-beli python fusson:
 ```
-export PYTHONPATH=$PYTHONPATH:/home/vaj/.virtualenvs/tf/lib/python3.12/site-packages
+export PYTHONPATH=$PYTHONPATH:/home/felhasznalo/.virtualenvs/tf/lib/python3.12/site-packages
 ```
-
+Másold az src mappába a best.pt filet
+```
+cp /home/felhasznalo/workspace/src/ros2-traffic-project/traffic-sign-v11/weights/best.pt ~/workspace/src
+```
 Majd indítsuk a yolo node-ot!
 ```
 ros2 run yolo_node yolo_gpt
